@@ -52,4 +52,4 @@ Folders **thrift-client**, **thrift-server**, and **kafka-consumer** include eve
 
 In order to execute each one, cd in the folder and run the bash file **start.sh** in the way described before.
 
-In order for everything to work as intented is is import to have zookeper server running, kafka server running running on **topic named "logfile"**, cassandra single node cluster up and running.
+In order for everything to work as intented is is import to have zookeper server running, kafka server running on **topic named "logfiles"**, cassandra single node cluster up and running.
