@@ -38,7 +38,7 @@ The schema I decided to use is : One table named **log_files** with the followin
 
 5. version (int). Version number for logging event schema.
 
-There is also a **compile.sh* bash file.
+There is also a **compile.sh** bash file.
 
 In order to create the binary folders it is important to make compile.sh executable and run it:
 **chmod u+x compile.sh
