@@ -41,8 +41,10 @@ The schema I decided to use is : One table named **log_files** with the followin
 There is also a **compile.sh** bash file.
 
 In order to create the binary folders it is important to make compile.sh executable and run it:
-**chmod u+x compile.sh
-bash compile.sh**
+
+1. **chmod u+x compile.sh**
+
+2. **bash compile.sh**
 
 After this in the project folder there will be left **thrift-client**, **thrift-server** and **kafka-consumer** folders together with logs.thrift file and cassandra-schema folder.
 
@@ -50,4 +52,4 @@ Folders **thrift-client**, **thrift-server**, and **kafka-consumer** include eve
 
 In order to execute each one, cd in the folder and run the bash file **start.sh** in the way described before.
 
-In order for everything to work as intented is is import to have zookeper server running, kafka server running running on **topic named "logfile"**, cassandra single node cluste up and running.
+In order for everything to work as intented is is import to have zookeper server running, kafka server running running on **topic named "logfile"**, cassandra single node cluster up and running.
