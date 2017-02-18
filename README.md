@@ -27,10 +27,15 @@ Folder **kafka-consumer** includes Java Class Consumer which reads logs from Kaf
 In the folder **cassandra-schema** there is a bash script which creates the recquired keyspace and table for Cassandra (pollfish, log_files) in order to make things easy.
 
 The schema I decided to use is : One table named **log_files** with the following attributes :
+
 1. id (int, Primary Key). An id that will help in incident report (e.g. Take a look at log number 12). In a realistic system it is more easy to examine incident number 12 than examine an incident that happened in 18/02/2017 18:32:45.
+
 2. date (timestamp). The exact date and time the log was produced.
+
 3. ip (text). In a realistic system there are a lot of computers sending logs,so ip helps us see which computer was the one that created the log.
+
 4. message (text). The log text.
+
 5. version (int). Version number for logging event schema.
 
 There is also a **compile.sh* bash file.
